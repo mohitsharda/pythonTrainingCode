@@ -26,5 +26,15 @@ otp = 1234
 userOtp = int(input("enter opt receive: "))
 print("is otp correct ?? ", (otp == userOtp))
 
-#Membership Testing
-#is, is not
+# Membership Testing
+# is, is not
+
+a = 10
+b = 10
+print(a == b)
+print(a is b)
+print(a is not b)
+
+# homeWork : find difference between  == and is
+
+# homeWork find 5 apptitude problem and solve them using operator
