@@ -5,7 +5,7 @@ def fibonacci(nums):
     elif nums == 1:
         return 1
     
-    else:
+    else: 
         return fibonacci(nums - 1) + fibonacci(nums - 2)
 
 number = 3
