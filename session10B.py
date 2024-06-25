@@ -19,11 +19,10 @@ from session10A import Vehicle
 
 class Driver:
 
-    def __init__(self, Name = "NA", phoneNumber = 0, email = "NA", vehicleType = "NA", licenceNumber = "NA", rating = 2.5, gender = "NA", Age = 0, vehicle = None):
+    def __init__(self, Name = "NA", phoneNumber = 0, email = "NA", licenceNumber = "NA", rating = 2.5, gender = "NA", Age = 18, vehicle = None):
         self.Name = Name
         self.phoneNumber = phoneNumber
         self.email = email
-        self.vehicleType = vehicleType
         self.licenceNumber = licenceNumber
         self.rating = rating
         self.gender = gender
@@ -35,7 +34,6 @@ class Driver:
         self.Name = input("ENTER NAME: ")
         self.phoneNumber = input("ENTER PHONENUMBER: ")
         self.email = input("ENTER EMAIL: ")
-        self.vehicleType = input("ENTER VEHICLETYPE : ")
         self.licenceNumber = input("ENTER LICENSENUMBER : ")
         self.rating = float(input("ENTER RATING: "))
         self.gender = input("ENTER GENDER : ")
@@ -50,16 +48,15 @@ class Driver:
     def show(self):
         print("\n------------- DRIVER --------------")
         print("NAME: {} | PHONENUMBER: {}".format(self.Name, self.phoneNumber))
-        print("EMAIL: {} | VEHICLE TYPE {}".format(self.email, self.vehicleType))
-        print("LICENSE NUMBER: {} | RATING: {}".format(self.licenceNumber, self.rating))
-        print("GENDER: {}".format(self.gender))
+        print("EMAIL: {} | LICENSE NUMBER: {}".format(self.email, self.licenceNumber))
+        print("RATING: {} | GENDER: {} | AGE: {}".format(self.rating, self.gender, self.Age))
+        print("------------- DRIVER --------------")
         self.vehicle.show()
-        print("------------- DRIVER --------------\n")
 
-vehicle = Vehicle()
-vehicle.show
+# vehicle = Vehicle()
+# vehicle.show
 
-driver = Driver()
-driver.addDriverDetails()
-driver.show()
+# driver = Driver()
+# driver.addDriverDetails()
+# driver.show()
 

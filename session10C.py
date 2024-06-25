@@ -18,14 +18,14 @@
 from session10B import Driver
 from session10A import Vehicle
 
-driver = Driver()
-driver.addDriverDetails()
-driver.show
+# driver = Driver()
+# driver.addDriverDetails()
+# driver.show
 
 
 class Customer:
 
-    def __init__(self, Name = "NA", phoneNumber = "NA", Address = "NA", email = "NA", gender = "NA", age = 0):
+    def __init__(self, Name = "NA", phoneNumber = "NA", Address = "NA", email = "NA", gender = "NA", age = 18):
         self.Name = Name
         self.phoneNumber = phoneNumber
         self.Address = Address
@@ -40,22 +40,22 @@ class Customer:
         self.Address = input("ENTER CUSTOMER ADDRESS : ")
         self.email = input("ENTER CUSTOMER EMAIL: ")
         self.gender = input("ENTER CUSTOMER GENDER : ")
-        self.Age = int(input("ENTER CUSTOMER AGE : "))
+        self.age = int(input("ENTER CUSTOMER AGE : "))
 
     def show(self):
         print("\n------------- CUSTOMER DETAIL --------------")
         print("NAME: {} | PHONENUMBER: {}".format(self.Name, self.phoneNumber))
         print("ADDRESS: {} | EMAIL: {}".format(self.Address, self.email))
-        print("GENDER: {} | AGE: ".format(self.gender, self.age))
+        print("GENDER: {} | AGE: {}".format(self.gender, self.age))
 
 
-vehicle = Vehicle()
-vehicle.show
+# vehicle = Vehicle()
+# vehicle.show
 
 
-driver = Driver()
-driver.show
+# driver = Driver()
+# driver.show
 
-customer = Customer()
-customer.addCustomerDetails()
-customer.show()
+# customer = Customer()
+# customer.addCustomerDetails()
+# customer.show()
