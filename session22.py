@@ -43,6 +43,10 @@ def index():
     return render_template("index.html")
 
 
+@webApp.route("/register") # Decorator  "/ ->> is a Register-page"
+def register():
+    return render_template("register.html")
+
 
 def main():
     # it will run the app infinitly till user wont quite
