@@ -1,15 +1,13 @@
 from session21C import MongoDbHelper
 from session21A import User
-users = User()
 
 def main():
     print("Welcome To MongoDb Test App:")
     dbHelper = MongoDbHelper()
-
-    """
-    user = User()
-    user.add_user_details()
-    document = vars(user)
+    
+    """    users = User()
+    users.addUserDetail()
+    document = vars(users)
     dbHelper.insert(document)
     """
 

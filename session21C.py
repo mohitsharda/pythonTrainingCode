@@ -19,7 +19,7 @@ class MongoDbHelper:
             print(e)
 
         # Get reference to the database
-        self.db = client['mohit']
+        self.db = client['project2024']
         self.collection = self.db[collection]
 
     def insert(self, document):

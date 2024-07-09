@@ -1,4 +1,11 @@
+"""
+   MongoDB CRUD OPERATIONS
+   1. Install the Pymongo Library
+      pip install "pymongo[srv]"
+    2. If you face  any error for SSL
+      pip install certifi
 
+"""
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
@@ -15,7 +22,7 @@ try:
 except Exception as e:
     print(e)
 
-db = client['mohit']
+db = client['project2024']
 
 # Get Collection Names from DataBase
 collections = db.list_collection_names()
@@ -24,7 +31,7 @@ for collection in collections:
     print(collection)
 
 documents = db['users'].find()
-print(documents)
+print(documents)    
 
 for document in documents:
     print(document)
