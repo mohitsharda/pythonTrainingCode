@@ -14,9 +14,11 @@ def main():
 
     # query = {"email": "mohit@example.com"}
     users = dbHelper.fetch()
-    for user in users:
-        print(user)
+    # for user in users:
+    #     print(user)
 
+    # this is to show the data in the tabulate form
+    print(tabulate(users, tablefmt='grid'))
 
 if __name__ == "__main__":
     main()
