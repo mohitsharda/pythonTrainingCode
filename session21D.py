@@ -1,5 +1,6 @@
 from session21C import MongoDbHelper
 from session21A import User
+from tabulate import tabulate
 
 def main():
     print("Welcome To MongoDb Test App:")
@@ -13,9 +14,10 @@ def main():
 
     # query = {"email": "mohit@example.com"}
     users = dbHelper.fetch()
-    for user in users:
-        print(user)
+    # for user in users:
+    #     print(user)
 
+    print(tabulate(users, tablefmt='grid'))
 
 if __name__ == "__main__":
     main()
