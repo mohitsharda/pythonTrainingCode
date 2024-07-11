@@ -10,18 +10,21 @@
         <div class="container-fluid p-5 bg-primary text-white text-center">
             <h1>Doctor App</h1>
             <p>Developed By Mohit</p>
+            <p>Technology Stack: Python, Flask, Bootstrap, MongoDB</p> 
         </div>
 
         <div class="container-fluid p-5">
           <h3>Login Here</h3>
-            <form action="/action_page.php">
+            <!-- <form action="/action_page.php"> -->
+            <form action="/fetch-user", method="post">
                 <div class="mb-3 mt-3">
                   <label for="email">Email:</label>
                   <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
                 </div>
                 <div class="mb-3">
                   <label for="pwd">Password:</label>
-                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                  <!-- <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"> -->
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
               </form>         
